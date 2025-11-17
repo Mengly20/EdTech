@@ -8,7 +8,8 @@ class EquipmentDatabase {
       nameKhmer: 'បំពង់សាក',
       category: 'Glassware',
       categoryKhmer: 'ឧបករណ៍កែវ',
-      usage: 'Used for holding, mixing, or heating small quantities of liquid or solid chemicals during laboratory experiments. Can withstand heating with a Bunsen burner.',
+      usage:
+          'Used for holding, mixing, or heating small quantities of liquid or solid chemicals during laboratory experiments. Can withstand heating with a Bunsen burner.',
       icon: 'science',
       tags: ['chemistry', 'laboratory', 'glass', 'experiment', 'sample'],
     ),
@@ -18,7 +19,8 @@ class EquipmentDatabase {
       nameKhmer: 'ពែង',
       category: 'Glassware',
       categoryKhmer: 'ឧបករណ៍កែវ',
-      usage: 'A cylindrical container with a flat bottom used for stirring, mixing and heating liquids. Graduated markings on the side provide volume measurements.',
+      usage:
+          'A cylindrical container with a flat bottom used for stirring, mixing and heating liquids. Graduated markings on the side provide volume measurements.',
       icon: 'water',
       tags: ['chemistry', 'measurement', 'mixing', 'laboratory'],
     ),
@@ -28,7 +30,8 @@ class EquipmentDatabase {
       nameKhmer: 'ពែងពពុះ',
       category: 'Glassware',
       categoryKhmer: 'ឧបករណ៍កែវ',
-      usage: 'Used for containing chemical reactions and for heating, boiling, or mixing chemicals. The narrow neck helps prevent spills and allows for easy swirling.',
+      usage:
+          'Used for containing chemical reactions and for heating, boiling, or mixing chemicals. The narrow neck helps prevent spills and allows for easy swirling.',
       icon: 'flask',
       tags: ['chemistry', 'experiment', 'heating', 'reaction'],
     ),
@@ -38,7 +41,8 @@ class EquipmentDatabase {
       nameKhmer: 'ស៊ីឡាំងបញ្ឈរមានខ្នាត',
       category: 'Measurement',
       categoryKhmer: 'ឧបករណ៍វាស់',
-      usage: 'Precisely measures volumes of liquids. More accurate than beakers for measuring specific volumes. Should be read at eye level at the bottom of the meniscus.',
+      usage:
+          'Precisely measures volumes of liquids. More accurate than beakers for measuring specific volumes. Should be read at eye level at the bottom of the meniscus.',
       icon: 'beaker',
       tags: ['measurement', 'volume', 'precision', 'laboratory'],
     ),
@@ -48,7 +52,8 @@ class EquipmentDatabase {
       nameKhmer: 'ចានពេត្រី',
       category: 'Culture Dish',
       categoryKhmer: 'ឧបករណ៍ដាំដុះ',
-      usage: 'A shallow circular dish with a lid used to culture microorganisms such as bacteria, fungi, and small plants. Often contains agar growth medium.',
+      usage:
+          'A shallow circular dish with a lid used to culture microorganisms such as bacteria, fungi, and small plants. Often contains agar growth medium.',
       icon: 'disc',
       tags: ['biology', 'culture', 'bacteria', 'growth'],
     ),
@@ -58,7 +63,8 @@ class EquipmentDatabase {
       nameKhmer: 'មីក្រូទស្សន៍',
       category: 'Optical Instrument',
       categoryKhmer: 'ឧបករណ៍អុបទិក',
-      usage: 'An optical instrument that magnifies tiny objects and organisms invisible to the naked eye. Used to observe cells, microorganisms, and small structures.',
+      usage:
+          'An optical instrument that magnifies tiny objects and organisms invisible to the naked eye. Used to observe cells, microorganisms, and small structures.',
       icon: 'eye',
       tags: ['biology', 'observation', 'cells', 'magnification'],
     ),
@@ -68,9 +74,21 @@ class EquipmentDatabase {
       nameKhmer: 'កុងតាំងបឺនសិន',
       category: 'Heating Equipment',
       categoryKhmer: 'ឧបករណ៍កំដៅ',
-      usage: 'A gas burner used to heat substances in the laboratory. Produces a hot, clean flame by mixing gas with air. Always use with proper safety precautions.',
+      usage:
+          'A gas burner used to heat substances in the laboratory. Produces a hot, clean flame by mixing gas with air. Always use with proper safety precautions.',
       icon: 'flame',
       tags: ['heating', 'fire', 'safety', 'experiment'],
+    ),
+    Equipment(
+      className: 'alcohol-lamp',
+      nameEnglish: 'Alcohol Lamp',
+      nameKhmer: 'ចង្កៀងអាល់កុល',
+      category: 'Heating Equipment',
+      categoryKhmer: 'ឧបករណ៍កំដៅ',
+      usage:
+          'A heating device that uses alcohol as fuel to produce a steady flame. Commonly used for heating small amounts of substances in laboratory experiments. Safer and more portable than gas burners.',
+      icon: 'local_fire_department',
+      tags: ['heating', 'fire', 'safety', 'experiment', 'alcohol', 'portable'],
     ),
     Equipment(
       className: 'pipette',
@@ -78,7 +96,8 @@ class EquipmentDatabase {
       nameKhmer: 'ពីប៉ែត',
       category: 'Transfer Tool',
       categoryKhmer: 'ឧបករណ៍ផ្ទេរ',
-      usage: 'Used to accurately transfer small volumes of liquid from one container to another. Can be manual or automatic with precise volume control.',
+      usage:
+          'Used to accurately transfer small volumes of liquid from one container to another. Can be manual or automatic with precise volume control.',
       icon: 'water_drop',
       tags: ['transfer', 'precision', 'measurement', 'liquid'],
     ),
@@ -88,7 +107,8 @@ class EquipmentDatabase {
       nameKhmer: 'ផែនផ្កា',
       category: 'Transfer Tool',
       categoryKhmer: 'ឧបករណ៍ផ្ទេរ',
-      usage: 'Used to pour liquids or fine-grained substances into containers with small openings. Also used for filtration when lined with filter paper.',
+      usage:
+          'Used to pour liquids or fine-grained substances into containers with small openings. Also used for filtration when lined with filter paper.',
       icon: 'filter',
       tags: ['transfer', 'filtration', 'pouring', 'laboratory'],
     ),
@@ -98,7 +118,8 @@ class EquipmentDatabase {
       nameKhmer: 'ដំបងកូរ',
       category: 'Mixing Tool',
       categoryKhmer: 'ឧបករណ៍កូរ',
-      usage: 'A glass or plastic rod used to stir solutions and mixtures. Helps dissolve solids in liquids and ensures uniform mixing of chemicals.',
+      usage:
+          'A glass or plastic rod used to stir solutions and mixtures. Helps dissolve solids in liquids and ensures uniform mixing of chemicals.',
       icon: 'swap_horizontal',
       tags: ['mixing', 'stirring', 'laboratory', 'glass'],
     ),
@@ -108,7 +129,8 @@ class EquipmentDatabase {
       nameKhmer: 'ទែម៉ូម៉ែត្រ',
       category: 'Measurement',
       categoryKhmer: 'ឧបករណ៍វាស់',
-      usage: 'Measures temperature of substances. Laboratory thermometers can measure a wide range of temperatures from very cold to very hot.',
+      usage:
+          'Measures temperature of substances. Laboratory thermometers can measure a wide range of temperatures from very cold to very hot.',
       icon: 'thermostat',
       tags: ['temperature', 'measurement', 'monitoring', 'laboratory'],
     ),
@@ -118,7 +140,8 @@ class EquipmentDatabase {
       nameKhmer: 'មេអំបោះ',
       category: 'Physics Tool',
       categoryKhmer: 'ឧបករណ៍រូបវិទ្យា',
-      usage: 'Produces a magnetic field and attracts magnetic materials like iron, nickel, and cobalt. Used to demonstrate magnetic properties and separate magnetic materials.',
+      usage:
+          'Produces a magnetic field and attracts magnetic materials like iron, nickel, and cobalt. Used to demonstrate magnetic properties and separate magnetic materials.',
       icon: 'magnet',
       tags: ['physics', 'magnetism', 'attraction', 'field'],
     ),
@@ -128,7 +151,8 @@ class EquipmentDatabase {
       nameKhmer: 'កញ្ចក់ពង្រីក',
       category: 'Optical Instrument',
       categoryKhmer: 'ឧបករណ៍អុបទិក',
-      usage: 'A convex lens that magnifies objects, making them appear larger. Used for close examination of small objects, insects, or text.',
+      usage:
+          'A convex lens that magnifies objects, making them appear larger. Used for close examination of small objects, insects, or text.',
       icon: 'search',
       tags: ['magnification', 'observation', 'lens', 'examination'],
     ),
@@ -138,7 +162,8 @@ class EquipmentDatabase {
       nameKhmer: 'ជញ្ជីង',
       category: 'Measurement',
       categoryKhmer: 'ឧបករណ៍វាស់',
-      usage: 'Measures the mass of objects by comparing them to known weights. Essential for accurate measurements in chemistry experiments.',
+      usage:
+          'Measures the mass of objects by comparing them to known weights. Essential for accurate measurements in chemistry experiments.',
       icon: 'balance',
       tags: ['measurement', 'mass', 'weighing', 'precision'],
     ),
@@ -148,7 +173,8 @@ class EquipmentDatabase {
       nameKhmer: 'វ៉ែនតាសុវត្ថិភាព',
       category: 'Safety Equipment',
       categoryKhmer: 'ឧបករណ៍សុវត្ថិភាព',
-      usage: 'Protective eyewear that shields eyes from chemical splashes, flying debris, and harmful substances. Must be worn at all times in the laboratory.',
+      usage:
+          'Protective eyewear that shields eyes from chemical splashes, flying debris, and harmful substances. Must be worn at all times in the laboratory.',
       icon: 'visibility',
       tags: ['safety', 'protection', 'eye', 'laboratory'],
     ),
@@ -158,16 +184,29 @@ class EquipmentDatabase {
       nameKhmer: 'អាវបន្ទប់ពិសោធន៍',
       category: 'Safety Equipment',
       categoryKhmer: 'ឧបករណ៍សុវត្ថិភាព',
-      usage: 'Protective clothing worn to shield the body and regular clothes from chemical spills, stains, and contamination. Essential safety equipment in laboratories.',
+      usage:
+          'Protective clothing worn to shield the body and regular clothes from chemical spills, stains, and contamination. Essential safety equipment in laboratories.',
       icon: 'shield',
       tags: ['safety', 'protection', 'clothing', 'laboratory'],
+    ),
+    Equipment(
+      className: 'gas-syringe',
+      nameEnglish: 'Gas Syringe',
+      nameKhmer: 'សឺរាំងហ្គាស',
+      category: 'Measurement',
+      categoryKhmer: 'ឧបករណ៍វាស់',
+      usage:
+          'Used to measure and collect gas volumes in chemical reactions. The plunger moves freely and the volume of gas can be read from the graduated scale on the barrel.',
+      icon: 'analytics',
+      tags: ['measurement', 'gas', 'volume', 'chemistry', 'experiment'],
     ),
   ];
 
   static Equipment? getEquipmentByClass(String className) {
     try {
       return allEquipment.firstWhere(
-        (equipment) => equipment.className.toLowerCase() == className.toLowerCase(),
+        (equipment) =>
+            equipment.className.toLowerCase() == className.toLowerCase(),
       );
     } catch (e) {
       return null;
@@ -176,7 +215,7 @@ class EquipmentDatabase {
 
   static List<Equipment> searchEquipment(String query) {
     if (query.isEmpty) return allEquipment;
-    
+
     final lowerQuery = query.toLowerCase();
     return allEquipment.where((equipment) {
       return equipment.nameEnglish.toLowerCase().contains(lowerQuery) ||

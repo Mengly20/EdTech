@@ -15,13 +15,19 @@ class ScanHistoryProvider with ChangeNotifier {
     notifyListeners();
 
     _history = await StorageService.loadScanHistory();
-    
+
     _isLoading = false;
     notifyListeners();
   }
 
   Future<void> addScan(ScanHistoryItem item) async {
     _history.insert(0, item);
+    await StorageService.saveScanHistory(_history);
+    notifyListeners();
+  }
+
+  Future<void> deleteScan(String id) async {
+    _history.removeWhere((item) => item.id == id);
     await StorageService.saveScanHistory(_history);
     notifyListeners();
   }
@@ -40,10 +46,10 @@ class ScanHistoryProvider with ChangeNotifier {
     notifyListeners();
 
     final success = await DriveService.backupToGoogleDrive(_history);
-    
+
     _isLoading = false;
     notifyListeners();
-    
+
     return success;
   }
 
@@ -52,16 +58,16 @@ class ScanHistoryProvider with ChangeNotifier {
     notifyListeners();
 
     final syncedHistory = await DriveService.syncFromGoogleDrive();
-    
+
     if (syncedHistory != null) {
       _history = syncedHistory;
       await StorageService.saveScanHistory(_history);
-      
+
       _isLoading = false;
       notifyListeners();
       return true;
     }
-    
+
     _isLoading = false;
     notifyListeners();
     return false;
